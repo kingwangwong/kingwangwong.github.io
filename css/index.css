@@ -1,0 +1,59 @@
+header {
+    border-radius: 10px;
+    background-color: gray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+    border-right: 1x solid white;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#mypic {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.caption {
+    background-color: coral;
+    padding: 8px 12px;
+    border-radius: 10px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    
+}
+
+h1.index {
+    display: flex;
+    justify-content: center;
+    color:red
+}
