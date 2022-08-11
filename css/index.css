@@ -1,9 +1,14 @@
+html {
+    background: url(/resources/sandyroom.png) no-repeat center fixed;
+    background-size: cover;
+}
+
 header {
     border-radius: 10px;
     background-color: gray;
 }
 
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,15 +16,16 @@ ul {
 
 }
 
-li {
+header li {
     float: left;
     border-right: 1x solid white;
 }
 
-li a {
+header a {
     display: block;
     text-align: center;
-    padding: 8px 12px;
+    padding: 8px 8px;
+    margin-right: 3px;
     text-decoration: none;
     color: black
 }
@@ -49,11 +55,32 @@ li a:hover:not(.active) {
     display: block;
     margin: auto;
     margin-top: 12px;
-    
 }
 
-h1.index {
+h1 {
     display: flex;
     justify-content: center;
-    color:red
+    color: red
+}
+
+#ex {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.card {
+    background-color: burlywood;
+    padding: 1.5em;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+.card img {
+    width: 200px;
+}
+.content {
+    display: flex;
+
 }
