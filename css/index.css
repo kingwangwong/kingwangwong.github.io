@@ -1,9 +1,11 @@
-html {
-    background: url(/resources/sandyroom.png) no-repeat center fixed;
+body {
+    background: url("https://i.imgur.com/NAwAkDC.png") no-repeat center fixed;
     background-size: cover;
     font-family: sans-serif;
     color: rgb(0, 0, 51);
 }
+
+
 
 header {
     border-radius: 10px;
@@ -82,30 +84,27 @@ p{
 }
 
 .card {
-    
     background-image: linear-gradient(rgb(141, 189, 199),rgba(138, 135, 222, 0.3));
     padding: 1.5em;
     border-radius: 10px;
     display: block;
     margin: 10px;
     text-align: center;
+    flex: 1 1 0px;
 }
 .card img {
-    width: 98%;
+    width:98%;
 }
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
-    
+
 }
 
 @media (max-width: 800px) {
 
     .content {
         flex-direction: column;
-    }
-    .card img {
-        width: 98%;
     }
 }
