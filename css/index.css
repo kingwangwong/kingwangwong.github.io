@@ -32,7 +32,7 @@ header a {
 }
 
 li a:hover:not(.active) {
-    background-color: rgb(176, 134, 98);
+    background-color: rgba(115, 171, 220, 0.4);
     border-radius: 10px;
     
 }
@@ -50,9 +50,8 @@ li a:hover:not(.active) {
     display: block;
     margin: auto;
 }
-
 .caption {
-    background-image: linear-gradient(rgb(141, 189, 199),rgb(138, 135, 222));
+    background-image: linear-gradient(rgb(141, 189, 199),rgba(138, 135, 222, 0.3));
     padding: 8px 12px;
     border-radius: 10px;
     width: 250px;
@@ -60,6 +59,7 @@ li a:hover:not(.active) {
     margin: auto;
     margin-top: 12px;
     text-align: center;
+
 }
 .caption li{
     text-align: left;
@@ -83,7 +83,7 @@ p{
 
 .card {
     
-    background-image: linear-gradient(rgb(141, 189, 199),rgb(138, 135, 222));
+    background-image: linear-gradient(rgb(141, 189, 199),rgba(138, 135, 222, 0.3));
     padding: 1.5em;
     border-radius: 10px;
     display: block;
@@ -91,11 +91,13 @@ p{
     text-align: center;
 }
 .card img {
-    width: 200px;
+    width: 98%;
 }
 .content {
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
+    
 }
 
 @media (max-width: 800px) {
@@ -104,6 +106,6 @@ p{
         flex-direction: column;
     }
     .card img {
-        width: 80%;
+        width: 98%;
     }
 }
