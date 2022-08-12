@@ -1,11 +1,13 @@
 html {
     background: url(/resources/sandyroom.png) no-repeat center fixed;
     background-size: cover;
+    font-family: sans-serif;
+    color: rgb(0, 0, 51);
 }
 
 header {
     border-radius: 10px;
-    background-color: gray;
+    background-color: rgb(148, 101, 72);
 }
 
 header ul {
@@ -18,26 +20,28 @@ header ul {
 
 header li {
     float: left;
-    border-right: 1x solid white;
 }
 
 header a {
     display: block;
     text-align: center;
-    padding: 8px 8px;
+    padding: 8px 12px;
     margin-right: 3px;
     text-decoration: none;
-    color: black
+    color: rgb(0, 0, 51);
 }
 
 li a:hover:not(.active) {
-    background-color: lightgray;
+    background-color: rgb(176, 134, 98);
     border-radius: 10px;
+    
 }
 
 .active {
-    background-color: aqua;
+    background-color: rgb(115, 171, 220);
     border-radius: 10px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 #mypic {
@@ -48,29 +52,38 @@ li a:hover:not(.active) {
 }
 
 .caption {
-    background-color: coral;
+    background-image: linear-gradient(rgb(141, 189, 199),rgb(138, 135, 222));
     padding: 8px 12px;
     border-radius: 10px;
     width: 250px;
     display: block;
     margin: auto;
     margin-top: 12px;
+    text-align: center;
+}
+.caption li{
+    text-align: left;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    color: red
+    color: rgb(115, 171, 220);
+    text-decoration-line: underline;
+    text-shadow: rgb(180, 6, 215) 2px 2px 5px;
 }
-
-#ex {
-    width: 200px;
-    display: block;
-    margin: auto;
+h3 {
+    color: rgb(115, 171, 220);
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: large;
 }
 
 .card {
-    background-color: burlywood;
+    
+    background-image: linear-gradient(rgb(141, 189, 199),rgb(138, 135, 222));
     padding: 1.5em;
     border-radius: 10px;
     display: block;
@@ -82,5 +95,15 @@ h1 {
 }
 .content {
     display: flex;
+    justify-content: space-evenly;
+}
 
+@media (max-width: 800px) {
+
+    .content {
+        flex-direction: column;
+    }
+    .card img {
+        width: 80%;
+    }
 }
